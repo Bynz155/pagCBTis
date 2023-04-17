@@ -448,6 +448,15 @@ h2{
     border-radius: 17px;;
     margin: auto;
 }
+.container__Winner{
+    margin: auto;
+}
+.container__Winner h2{
+    text-align: center;
+}
+.container__Winner h2 svg{
+    width: 20px;
+}
 .items__candidatas h2{
     text-align: center;
 }
