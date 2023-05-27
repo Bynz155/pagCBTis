@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
 body{
     background-color: #E3D3C6;
@@ -66,6 +67,7 @@ h1{
     text-align: center;
 }
 h2{
+    text-align: center;
     font-size: calc(16px + .8vw);
 }
 
@@ -108,7 +110,7 @@ h2{
     background-color: #0C231E;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     z-index: 11;
 }
@@ -171,6 +173,7 @@ h2{
 }
 
 
+
 @media screen and (max-width: 850px){
     .button__menu{
         position: absolute;
@@ -205,6 +208,10 @@ h2{
     .li__menu a{
         font-size: 14px;
     }
+    .li__menu a:hover{
+        color: #85d5b4;
+        font-size: 14px;
+    }
     .nav.activo{
         display: block;
     } 
@@ -229,8 +236,15 @@ h2{
     .li__menu__categorias{
         margin: 6px 10px;
     }   
-    .li__menu__categoria a{
-        font-size: 12px;
+    .li__menu__categorias a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        transition: all .5s;
+    }
+    .li__menu__categorias a:hover{
+        color: #88d699;
+        font-size: 14px;
     }
     .container__menu__categorias.activo{
         display: block;
@@ -239,6 +253,34 @@ h2{
 }
 
 
+.ul__submenu__ecologia{
+    display: none;
+}
+.ul__submenu__ecologia.activo{
+    display: block;
+    position: absolute;
+    height: 120px;
+    list-style: none;
+    background-color: #0c231ebd;
+}
+
+
+.ul__submenu__ecologia a{
+    font-size: 15px;
+}
+.ul__submenu__ecologia li{
+    margin: 15px;
+}
+.ul__submenu__ecologia a:hover{
+    font-size: 15px;
+}
+.button__submenu__ecologia{
+    width: 12px;
+    height: 12px;
+    background-color: #0C231E;
+    border: none;
+    cursor: pointer;
+}
 /*footer*/
 .footer{
     background-color: #0C231E;
@@ -519,14 +561,37 @@ h2{
 .div__container__empredimiento.tecnologico{
     background-color: #3432324e;
 }
-.div__container__empredimiento.ganadores{
-    background-color: #D4AF374e;
-}
 
 .items__empredimiento{
     min-width: 150px;
     max-width: 350px;
     margin: 10px 2px;
+}
+.items__empredimientos.didactico{
+    background-color: #e6df134e;
+}
+.items__empredimientos.verde{
+    background-color: #26c0474e;
+}
+.items__empredimientos.software{
+    background-color: #1a2f764e;
+}
+.items__empredimientos.tecnologico{
+    background-color: #3432324e;
+}
+.items__empredimientos.social{
+    background-color: #c528134e;
+}
+.items__empredimientos{
+    min-width: 150px;
+    max-width: 350px;
+    margin: 10px 2px;
+}
+.items__empredimientos h3{
+    text-align: center;
+}
+.items__empredimientos p{
+    text-align: center;
 }
 
 .items__empredimiento h3{
@@ -574,4 +639,119 @@ h2{
 .container__img__especialidades img{
     width: 100%;
     border-radius: 15px;
+}
+
+/*ecologia*/
+
+.text__ecologia{
+    margin: 20px;
+}
+h2[class="reciclaje"]{
+    background-color: #2d7a3ed2;
+    margin: 0 5%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 7px;
+    color: #fff;
+}
+.div__1{
+    background-color: #2a944182;
+    border-radius: 15px;
+    margin: 0 5%;
+    padding: 20px 10%;
+}
+
+.container__img__reciclaje{
+    width: 50vw;
+    max-width: 600px;
+    min-width: 200px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.container__img__reciclaje img{
+    width: 100%;
+    border-radius: 15px;
+}
+/*
+.container__reciclaje{
+    background: url(../Imagenes/reciclaje1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+*/
+h2[class="huella"]{
+    background-color: #063f12d2;
+    margin: 0 5%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 7px;
+    color: #fff;
+}
+.div__2{
+    background-color: #39754682;
+    border-radius: 15px;
+    margin: 0 5%;
+    padding: 20px 10%;
+}
+
+.container__img__huella{
+    width: 50vw;
+    max-width: 600px;
+    min-width: 200px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.container__img__huella img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+h2[class="reforestacion"]{
+    background-color: #344931d2;
+    margin: 0 5%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 7px;
+    color: #fff;
+}
+.div__3{
+    background-color: #384b3882;
+    border-radius: 15px;
+    margin: 0 5%;
+    padding: 20px 10%;
+}
+
+.container__img__reforestacion{
+    width: 50vw;
+    max-width: 600px;
+    min-width: 200px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.container__img__reforestacion img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.container__reforestacion{
+    padding: 15px 0;
+    background-image: url(../Fondo/f_refo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container__reciclaje{
+    padding: 15px 0;
+    background-image: url(../Fondo/f_reci3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container__huella{
+    padding: 15px 0;
+    background-image: url(../Fondo/f_huella3.jpg);
+    background-size: cover;
+    background-position: center;
 }
