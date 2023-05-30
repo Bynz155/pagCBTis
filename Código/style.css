@@ -9,6 +9,13 @@ body{
     background-color: #E3D3C6;
 }
 
+.container__principal{
+    margin: 30px 170px;
+}
+.div__act{
+    margin: 30px 100px;
+}
+
 hr{
     margin: 50px;
 }
@@ -174,7 +181,7 @@ h2{
 
 
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 1000px){
     .button__menu{
         position: absolute;
         right: 10px;
@@ -250,6 +257,15 @@ h2{
         display: block;
         transition: all 1s ease;
     } 
+
+
+
+    .div__act{
+        margin: 10px 30px;
+    }
+    .container__principal{
+        margin: 10px;
+    }
 }
 
 
@@ -337,7 +353,7 @@ h2{
 .container__img{
     width: 75vw;
     max-width: 1000px;
-    min-width: 260px;
+    min-width: 220px;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -369,7 +385,7 @@ h2{
     align-items: center;
 }
 .items__quienes__somos{
-    min-width: 250px;
+    min-width: 240px;
     max-width: 600px;
     flex-grow: 1;
     margin: 20px;
@@ -380,7 +396,7 @@ h2{
 .container__img__qsomos{
     width: 75vw;
     max-width: 600px;
-    min-width: 250px;
+    min-width: 230px;
     margin: auto;
     margin-top: 50px;
 }
@@ -409,7 +425,7 @@ h2{
     align-items: center;
 }
 .items__agenda{
-    min-width: 250px;
+    min-width: 200px;
     max-width: 500px;
     margin: 20px;
 }
@@ -419,9 +435,6 @@ h2{
 
 
 /*metas ODS*/
-.div__description__ODS{
-    margin: 10px;
-}
 .div__description__ODS h2{
     text-align: center;
     margin: 20px 0;
@@ -430,12 +443,26 @@ h2{
     margin-left: 30px;
     margin-top: 50px;
 }
-.div__description__ODS img{
+.container__img__metas img{
     float: right;
     width: 40vw;
-    min-width: 150px;
+    min-width: 160px;
     max-width: 270px;
     margin: 18px 22px;
+    border-radius: 15px;
+}
+@media screen and (max-width: 349px){
+    .d{
+        width: 75vw;
+        min-width: 180px;
+        max-width: 270px;
+    }
+    .container__img__metas img{
+        float: none;
+        width: 90%;
+        border-radius: 15px;
+        margin: auto 10px;
+    }
 }
 .div__description__ODS p{
     margin: 10px;
@@ -446,7 +473,6 @@ h2{
     margin: 10px 30px 50px 30px;
     font-size: 18px;
 }
-
 
 /*actividades*/
 
@@ -462,7 +488,7 @@ h2{
     align-content: center;
 }
 .div__container__placita img{
-    min-width: 250px;
+    min-width: 225px;
     max-width: 500px;
     margin: 20px;
     border-radius: 15px;
@@ -476,12 +502,12 @@ h2{
 
 }
 .items__candidatas{
-    min-width: 250px;
+    min-width: 400px;
     max-width: 550px;
     margin: 25px;
 }
 .container__img__candidatas{
-    min-width: 250px;
+    min-width: 230px;
     max-width: 450px;
     margin: 20px auto;
 }
@@ -504,6 +530,15 @@ h2{
 }
 
 /*prototipos*/
+.container__proto{
+    margin: 30px 50px;
+}
+@media screen and (max-width: 1000px){
+    .container__proto{
+        margin: 10px;
+    }
+}
+
 .items__empredimiento p{
     font-size: 16px;
     text-align: center;
@@ -611,7 +646,7 @@ h2{
 
 /*especialidades*/
 .especialidades{
-    margin: 30px;
+    margin: 10px;
 }
 .especialidades p{
     font-size: 18px;
@@ -625,13 +660,12 @@ h2{
     margin-bottom: 10px;
 }
 .especialidades h2{
-    margin-top: 80px;
+    margin-top: 120px;
 }
 .container__img__especialidades{
     width: 75vw;
     max-width: 600px;
     min-width: 250px;
-    max-width: 850px;
     margin: auto;
     margin-top: 25px;
     margin-bottom: 25px;
