@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -488,7 +489,7 @@ h2{
     align-content: center;
 }
 .div__container__placita img{
-    min-width: 225px;
+    min-width: 230px;
     max-width: 500px;
     margin: 20px;
     border-radius: 15px;
@@ -502,13 +503,13 @@ h2{
 
 }
 .items__candidatas{
-    min-width: 400px;
-    max-width: 550px;
+    min-width: 230px;
+    max-width: 500px;
     margin: 25px;
 }
 .container__img__candidatas{
-    min-width: 230px;
-    max-width: 450px;
+    min-width: 200px;
+    max-width: 350px;
     margin: 20px auto;
 }
 .container__img__candidatas img{
@@ -789,3 +790,61 @@ h2[class="reforestacion"]{
     background-size: cover;
     background-position: center;
 }
+
+
+
+  /*
+.container__carrusel{
+    width: 90%;
+    max-width: 120em;
+    background-color: #73c7e1;
+    margin: auto;
+    border-radius: 20px;
+    padding: 32px;
+}
+.imagenes__carrusel{
+    width: 200%;
+    background-color: #26c047;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    transition: all .5s ease;
+    transform: translateX(0%);
+}
+.img__carrusel{
+    width: calc(100% / 2);
+    min-height: 10vh;
+}
+.puntos__carrusel{
+    width: 100%;
+    background-color: #ff0000;
+    padding: 16px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.puntos__carrusel li{
+    width: 32px;
+    height: 32px;
+    background-color: #12276d;
+    margin: 16px;
+    list-style: none;
+}
+.puntos__carrusel .punto.act{
+    background-color: orange;
+}
+.flechas__carrusel{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    background-color: #6c2cb0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}*/

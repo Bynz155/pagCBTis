@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./Código/style.css">
+    <link rel="stylesheet" href="./Código/estiloCarrusel.css">
+    <title>Ecología</title>
     <link rel="icon" href="./Imagenes/cbtis.png" type="image/png" sizes="16x16">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecología</title>
+    <script defer src="./Código/carrusel.js"></script>
 </head>
 <body>
     <header>
@@ -48,7 +50,6 @@
         </div>
     </header>
     <main class="main__ecologia">
-        <div>
             <div class="container__reciclaje">
                 <h2 class="reciclaje" id="reci">Reciclaje</h2>
                 <div class="div__1">
@@ -78,6 +79,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="container__huella">
                 <h2 class="huella" id="hue">Huella ecologica</h2>
                 <div class="div__2">
@@ -95,6 +97,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="container__reforestacion">
                 <h2 class="reforestacion" id="refo">Reforestación</h2>
                 <div class="div__3">
@@ -111,8 +114,20 @@
                         <img src="./Imagenes/reforestacion1.png" alt="">
                     </div>
                 </div>
-            </div>
-        </div>  
+                <div class="container__carrusel">
+                    <div class="carrusel">
+                        <img src="./Imagenes/refo1.jpg" alt="imagen1" class="img__carrusel">
+                        <img src="./Imagenes/refo2.jpg" alt="imagen2" class="img__carrusel">
+                        <img src="./Imagenes/refo3.jpg" alt="imagen3" class="img__carrusel">
+                    </div>
+                    
+                    <ul class="puntos__carrusel">
+                        <li class="punto activo"></li>
+                        <li class="punto"></li>
+                        <li class="punto"></li>
+                    </ul>
+                </div>
+            </div>  
     </main>
     <div class="container__button__back">
         <button class="button__back">

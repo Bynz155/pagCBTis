@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+:root {
+  --negro: #081d05;
+  --blanco: #bdeeb0;
+  --sombra-ppal: #c9c9c9;
+  --sombra-sec: #ddefd9;
+  --borde-negro: #02110150;
+  --marcado: rgb(127, 195, 255);
+  /* Tipografía */
+  --tipo-principal: Helvetica, Arial, sans-serif;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #ececec;
+    --blanco: #303030;
+    --sombra-ppal: #242424;
+    --sombra-sec: #3c3c3c;
+    --borde-negro: #FFFFFF50;
+  }
+}
+
+
+
+.container__carrusel{
+    width: 80%;
+    max-width: 120em;
+    padding: 2em;
+    color: var(--negro);
+    margin: auto;
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    overflow: hidden;
+    padding-top: 32px;
+  }
+  
+  .container__carrusel .carrusel {
+    width: 300%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    padding: 2em;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+  }
+  
+  .container__carrusel .img__carrusel {
+    width: calc( 100% / 3 - 3em);
+    min-height: 10vh;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  }
+  
+  .container__carrusel .puntos__carrusel {
+    width: 100%;
+    margin: 1em 0 0;
+    padding: 0.4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container__carrusel .punto {
+    list-style: none;
+    width: 2em;
+    height: 2em;
+    margin: 1em 1em 0;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 0.6em 0.6em 1.2em var(--sombra-ppal), -0.6em -0.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  }
+  
+  .container__carrusel .punto.activo {
+    background-color: #28c53f;
+  }
+
+  @media screen and (max-width: 1000px){
+    .container__carrusel{
+      padding: 0;
+      margin: 10px;
+      margin: auto;
+    }
+  }
